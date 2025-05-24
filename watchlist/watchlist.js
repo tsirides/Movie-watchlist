@@ -54,7 +54,9 @@ export function watchlistHTML(movie) {
                 <span>${movie.Genre}</span>
                 <button data-id="${
                   movie.imdbID
-                }" class="watchlistRemove"><span class="plus-icon">&minus;</span>Remove</button>
+                }" class="watchlistRemove"><span data-id="${
+    movie.imdbID
+  }" class="plus-icon">&minus;</span>Remove</button>
             </div>
             <p>${movie.Plot}</p>
         </div>
