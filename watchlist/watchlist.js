@@ -37,7 +37,7 @@ async function renderMovies(movies) {
 export function watchlistHTML(movie) {
   return `
         <div class='movie'>
-        <img src="${
+        <img class="poster" src="${
           movie.Poster.length > 3 ? movie.Poster : "./imgs/placeholder.jpg"
         }">
         <div class="movie-details">

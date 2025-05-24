@@ -13,21 +13,28 @@ body {
 }
 .movie {
   display: flex;
-  gap: 21px;
-  padding: 21px 0px;
+  gap: 24px;
+  padding: 16px 0px;
   border-bottom: 1px solid #2c2c2c;
+  align-items: center;
 }
 
 .movie p {
+  font-size: 0.875rem;
   color: #a5a5a5;
 }
 
-.movie img {
-  max-width: 140px;
+.movie .poster {
+  max-width: 99px;
+  height: 100%;
 }
-
+.movie-title {
+  margin: 0;
+  margin-bottom: 4px;
+}
 #movies-list {
-  padding: 44px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 .movie-data {
   display: flex;
@@ -48,9 +55,7 @@ body {
 .movie-details {
   width: 100%;
 }
-.movie-title {
-  max-width: 180px;
-}
+
 .rating-star {
   min-height: 14px;
   margin-right: 8px;
@@ -71,7 +76,7 @@ body {
   display: flex;
   margin-top: -19px;
   width: 100%;
-  padding: 0px 44px;
+  padding: 0px 16px;
 }
 #searchForm button {
   width: 30%;
@@ -95,7 +100,7 @@ body {
 }
 #searchBar {
   width: 100%;
-  padding: 9px 32px;
+  padding: 9px 16px;
   background-color: #2e2e2f;
   color: #a5a5a5;
   border: none;
@@ -118,7 +123,7 @@ header {
   background-size: cover;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 44px;
+  padding: 0px 16px;
 }
 
 .explore {
