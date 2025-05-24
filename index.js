@@ -4,6 +4,11 @@ export const baseUrl = `https://www.omdbapi.com/?apikey=${apiKey}&`;
 let searchResults = [];
 const myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
 export let watchlist = myWatchlist;
+if (!myWatchlist) {
+  watchlist = [];
+} else {
+  watchlist = myWatchlist;
+}
 
 const searchValue = document.getElementById("searchBar");
 const searchForm = document.getElementById("searchForm");
@@ -83,7 +88,7 @@ export function filmHTML(movie) {
 
 document.addEventListener("click", (e) => {
   if (e.target.className === "watchlistAdd") {
-    if (watchlist.includes(e.target.dataset.id)) {
+    if (watchlist?.includes(e.target.dataset.id)) {
       watchlist.splice(watchlist.indexOf(e.target.dataset.id), 1);
     } else {
       watchlist.push(e.target.dataset.id);
