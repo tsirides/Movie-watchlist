@@ -1,4 +1,4 @@
-import { watchlist, baseUrl, filmHTML } from "./index.js";
+import { watchlist, baseUrl, filmHTML } from "../index.js";
 
 const moviesWatchlist = document.getElementById("movies-list");
 
