@@ -65,8 +65,10 @@ export function watchlistHTML(movie) {
 }
 
 document.addEventListener("click", (e) => {
-  if (e.target.className === "watchlistRemove") {
-    console.log("check");
+  if (
+    e.target.className === "watchlistRemove" ||
+    e.target.className === "plus-icon"
+  ) {
     if (watchlist.includes(e.target.dataset.id)) {
       watchlist.splice(watchlist.indexOf(e.target.dataset.id), 1);
     } else {

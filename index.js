@@ -89,7 +89,10 @@ export function filmHTML(movie) {
 }
 
 document.addEventListener("click", (e) => {
-  if (e.target.className === "watchlistAdd") {
+  if (
+    e.target.className === "watchlistAdd" ||
+    e.target.className === "plus-icon"
+  ) {
     if (watchlist?.includes(e.target.dataset.id)) {
       watchlist.splice(watchlist.indexOf(e.target.dataset.id), 1);
     } else {
