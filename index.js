@@ -70,7 +70,7 @@ export function filmHTML(movie) {
                 <button data-id="${
                   movie.imdbID
                 }" class="watchlistAdd"><span class="plus-icon">${
-    watchlist.includes(movie.imdbID)
+    watchlist?.includes(movie.imdbID)
       ? "&minus;</span> Remove"
       : "&plus;</span> Watchlist"
   }</button>
