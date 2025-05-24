@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.movie {
+  display: flex;
+  gap: 21px;
+  padding: 21px 0px;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.movie p {
+  color: #a5a5a5;
+}
+
+.movie img {
+  max-width: 140px;
+}
+
+#movies-list {
+  padding: 44px;
+}
+.movie-data {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.movie-data button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.movie-details {
+  width: 100%;
+}
+.movie-title {
+  max-width: 180px;
+}
+.rating-star {
+  min-height: 14px;
+  margin-right: 8px;
+}
+.plus-icon {
+  background: white;
+  padding: 3px 7px;
+  color: black;
+  margin-right: 4px;
+  border-radius: 100%;
+}
+.movie-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#searchForm {
+  display: flex;
+  margin-top: -19px;
+  width: 100%;
+  padding: 0px 44px;
+}
+#searchForm button {
+  width: 30%;
+  background-color: #4b4b4b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border-radius: 0px 4px 4px 0px;
+}
+.loading {
+  color: white !important;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.spinner {
+  width: 48px;
+  display: flex;
+  margin: 0 auto;
+}
+#searchBar {
+  width: 100%;
+  padding: 9px 32px;
+  background-color: #2e2e2f;
+  color: #a5a5a5;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 1rem;
+}
+#searchBar input::after {
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: red;
+  content: "hel";
+}
+
+header {
+  display: flex;
+  background-image: url(/imgs/movies-header.png);
+  min-height: 208px;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 44px;
+}
+
+.explore {
+  color: #2e2e2f;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+  justify-content: center;
+  height: 60%;
+  text-align: center;
+  align-items: center;
+}
+
+.explore a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+.explore a:hover {
+  color: #cfcfcf;
+}
+.explore span {
+  width: 14px;
+  height: 14px;
+  padding: 4px 8px;
+}
+.nav {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
