@@ -1,5 +1,5 @@
 export const apiKey = "2103b891";
-export const baseUrl = `http://www.omdbapi.com/?apikey=${apiKey}&`;
+export const baseUrl = `https://www.omdbapi.com/?apikey=${apiKey}&`;
 
 let searchResults = [];
 const myWatchlist = JSON.parse(localStorage.getItem("watchlist"));
